@@ -11,3 +11,13 @@ This paper: [Advancing Code Obfuscation: Novel Opaque Predicate Techniques to Co
 <img width="1978" height="963" alt="image" src="https://github.com/user-attachments/assets/49cc6983-e657-4d03-a424-7fe7249dea69" /><br> 
 <img width="1405" height="313" alt="image" src="https://github.com/user-attachments/assets/3feadd22-d0ed-439e-8601-05393e7497f3" /><br> 
 <img width="1852" height="850" alt="image" src="https://github.com/user-attachments/assets/3dfe6ba3-b392-45a1-a92e-cdd30f0ed799" /><br> 
+
+## How To Build
+* Download [LLVM 19.1](https://github.com/llvm/llvm-project/releases/tag/llvmorg-19.1.0)
+* Download [VCPKG](https://github.com/microsoft/vcpkg)
+* VCPKG install asmjit
+* Open build.bat in a text editor.
+* Find the LLVM 19.1 references in the command line, Change them to your file path.
+* Find the VCPKG references in the command line, Change them to your file path.
+* Run the build script
+* Build your application with the ``` -load-pass-plugin ``` Param to the FunctionPass.dll
